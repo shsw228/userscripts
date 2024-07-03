@@ -1,23 +1,20 @@
 // ==UserScript==
 // @name         [cinecitta]いらない日付表示を削除する
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.0.1
 // @description  なぜ3作品ごとに日付を表示するのか
 // @author       shsw228
 // @match        https://cinecitta.co.jp/*
 // @match        https://members.cinecitta.jp/Cspc/usr/login.do
 // @homepage    https://github.com/shsw228/userscripts/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=cinecitta.co.jp
-// @grant        none
+// @grant        GM_addStyle
 // @license     MIT License
 // ==/UserScript==
 
-(function() {
-    'use strict';
-
-    // Your code here...
-    for (var a of document.getElementsByClassName("between"))a.style.display = "none";
-
-})();
-
+const css = `
+.between {
+  display: none;
+}`;
+GM_addStyle(css);z
 
