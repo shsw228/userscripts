@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         [cinecitta]いらない日付表示を削除する
 // @namespace    http://tampermonkey.net/
-// @version      1.0.1
+// @version      1.0.2
 // @description  なぜ3作品ごとに日付を表示するのか
 // @author       shsw228
 // @match        https://cinecitta.co.jp/*
@@ -16,5 +16,5 @@ const css = `
 .between {
   display: none;
 }`;
-GM_addStyle(css);z
+GM_addStyle(css);
 
